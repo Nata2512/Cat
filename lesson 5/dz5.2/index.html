@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ 5.2</title>
+</head>
+<body>
+    <script>
+       let rate = 36;
+       let result = "";
+       let dollar = 10;
+       do {
+        let hryvna = dollar * rate;
+        result += ` ${dollar} долларів = ${hryvna} гривень\n`;
+        dollar += 10;
+       } while (dollar <= 100);
+       console.log(result);
+    </script>
+</body>
+</html>
