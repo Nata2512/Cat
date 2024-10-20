@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ 5.4</title>
+</head>
+<body>
+<script> 
+
+let num = +prompt('Введить просте число.');
+if (num <= 1) {
+    console.log(`${num} не є простим числом.`);
+} else {
+    let isSimple = true;
+    let i = 2;
+    while (i <= Math.sqrt(num)){
+        if (num % i === 0){
+            isSimple = false;
+            break;
+        }
+        i++;
+    }
+    if (isSimple) {
+        console.log(`${num} є простим числом.`);
+    } else {
+        console.log(`${num} не є простим числом.`);
+    }
+}
+</script>
+</body>
+</html>
